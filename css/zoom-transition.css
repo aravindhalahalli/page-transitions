@@ -1,0 +1,31 @@
+@keyframes zoom-in {
+    0% {
+        opacity: 1;
+        transform: scale(0) ;
+        z-index: 2;
+    }
+    100%{
+        opacity: 1;
+        pointer-events: all ;
+        transform: scale(1);
+        z-index: 2;
+    }
+}
+
+@keyframes zoom-out {
+    0%{
+        opacity: 100% ;
+        pointer-events: all ;
+        transform: scale(1);
+        z-index: 1;
+    }
+    99.99%{
+        opacity: 100% ;
+    }
+    100% {
+        transform: scale(0);
+        pointer-events: none ;
+        opacity: 0 ;
+        z-index: 1;
+    }
+}

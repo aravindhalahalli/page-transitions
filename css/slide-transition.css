@@ -1,0 +1,27 @@
+@keyframes slide-in {
+    0% {
+        opacity: 1;
+        transform: translateX(100vw);
+    }
+    100%{
+        opacity: 1;
+        pointer-events: all ;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    0%{
+        opacity: 100% ;
+        pointer-events: all ;
+        transform: translateX(0vw);
+    }
+    99.99%{
+        opacity: 100% ;
+    }
+    100% {
+        transform: translateX(-100vw);
+        pointer-events: none ;
+        opacity: 0 ;
+    }
+}

@@ -1,0 +1,44 @@
+
+@keyframes zoom-slide2-in {
+    0%{
+        opacity: 1 ;
+        pointer-events: none ;
+        transform-origin: bottom ;
+        transform: translateZ(-31.3vh) rotateX(0deg) translateX(120vw);
+    }
+    50%{
+        transform: translateZ(-31.3vh) rotateX(0deg) translateX(0vw);
+    }
+    75%{
+        transform: translateZ(0) rotateX(10deg) ;
+    }
+    100% {
+        transform-origin: bottom ;
+        pointer-events: all ;
+        opacity: 1 ;
+        transform: translateZ(0vh) rotateX(0deg) ;
+    }
+}
+
+@keyframes zoom-slide2-out {
+    0% {
+        opacity: 1;
+        transform-origin: bottom ;
+        transform: translateZ(0vh) rotateX(0deg) ;
+    }
+    25% {
+        transform: translateZ(0) rotateX(10deg) ;
+    }
+    50%{
+        transform: translateZ(-31.3vh) rotateX(0deg);
+    }
+    99.99%{
+        opacity: 1 ;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none ;
+        transform-origin: bottom ;
+        transform: translateZ(-31.3vh) rotateX(0deg) translateX(-120vw);
+    }
+}

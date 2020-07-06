@@ -1,0 +1,47 @@
+@keyframes shuffle-ver-in {
+    0% {
+        opacity: 1;
+        transform-origin: bottom ;
+        transform: scale(1) translateX(0%) rotateX(0deg) rotateZ(0deg) ;
+        animation-timing-function: ease-out;
+        z-index: 1 ;
+    }
+    50%{
+        transform: scale(0.5) translateY(40%) rotateX(10deg) rotateZ(10deg);
+        z-index: 1 ;
+    }
+    50.1%{
+        z-index: 2 ;
+    }
+    100%{
+        opacity: 1;
+        pointer-events: all ;
+        transform: scale(1) translateY(0) rotateX(0deg) rotateZ(0deg);
+        z-index: 2 ;
+    }
+}
+
+@keyframes shuffle-ver-out {
+    0%{
+        opacity: 1 ;
+        transform-origin: top ;
+        transform: scale(1) translateX(0%) rotateX(0deg) rotateZ(0deg);
+        z-index: 2 ;
+    }
+    50%{
+        transform: scale(0.5) translateY(-40%) rotateX(10deg) rotateZ(10deg);
+        z-index: 2 ;
+    }
+    50.1%{
+        z-index: 1 ;
+    }
+    99.9%{
+        opacity: 1 ;
+    }
+    100% {
+        transform: scale(1) translateY(0) rotateX(0deg) rotateZ(0deg);
+        pointer-events: none ;
+        opacity: 0 ;
+        z-index: 1 ;
+    }
+}

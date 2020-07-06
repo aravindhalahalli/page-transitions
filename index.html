@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Transitions</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/main.js"></script>
+</head>
+<body>
+    <div class="wrapper fc">
+        <div class="page fc static" id="a" onclick="setPage(1)">A</div>
+        <div class="page fc" id="b" onclick="setPage(0)">B</div>
+    </div>
+    <div class="selector  lst-hide">
+        <div class="current fc btn" onclick="setMenu(1)">
+            
+        </div>
+        <div class="list">
+
+        </div>
+    </div>
+    <div class="overlay ov-hide"></div>
+</body>
+</html>

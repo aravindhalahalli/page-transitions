@@ -1,0 +1,42 @@
+@keyframes zoom-slide-in {
+    0% {
+        opacity: 1;
+        transform: scale(0.75) translate(150vw);
+    }
+    30%{
+        transform: scale(0.75) translate(150vw);
+    }
+    75%{
+        transform: scale(0.75) translate(0vw);
+    }
+    100%{
+        opacity: 1;
+        pointer-events: all ;
+        transform: scale(1) translate(0vw);
+    }
+}
+
+@keyframes zoom-slide-out {
+    0%{
+        opacity: 100% ;
+        pointer-events: all ;
+        transform: scale(1) translate(0);
+    }
+    25%{
+        transform: scale(0.75) translate(0);
+    }
+    30%{
+        transform: scale(0.75) translate(0);
+    }
+    75%{
+        transform: scale(0.75) translate(-150vw);
+    }
+    99.99%{
+        opacity: 100% ;
+    }
+    100% {
+        pointer-events: none ;
+        opacity: 0 ;
+        transform: scale(0.75) translate(-150vw);
+    }
+}
